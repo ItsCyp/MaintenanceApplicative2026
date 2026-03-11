@@ -3,6 +3,10 @@ package com.gildedrose;
 class GildedRose {
     Item[] items;
 
+    static final String AGED_BRIE = "Aged Brie";
+    static final String BACKSTAGE_PASSES = "Backstage passes to a TAFKAL80ETC concert";
+    static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
+
     public GildedRose(Item[] items) {
         this.items = items;
     }
@@ -15,9 +19,9 @@ class GildedRose {
 
     private void updateItem(Item item) {
         switch (item.name) {
-            case "Aged Brie" -> updateAgedBrie(item);
-            case "Backstage passes to a TAFKAL80ETC concert" -> updateBackstagePasses(item);
-            case "Sulfuras, Hand of Ragnaros" -> updateSulfuras(item);
+            case AGED_BRIE -> updateAgedBrie(item);
+            case BACKSTAGE_PASSES -> updateBackstagePasses(item);
+            case SULFURAS -> updateSulfuras(item);
             default -> updateStandardItem(item);
         }
     }
