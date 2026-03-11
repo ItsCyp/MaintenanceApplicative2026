@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.gildedrose.GildedRoseTest" time="0.062" tests="12" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\cypri\Documents\Workspace\S6\Maitenance Applicative\MaintenanceApplicative2026\GildedRose\target\test-classes;C:\Users\cypri\Documents\Workspace\S6\Maitenance Applicative\MaintenanceApplicative2026\GildedRose\target\classes;C:\Users\cypri\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\cypri\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\cypri\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\cypri\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\cypri\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cypri\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\cypri\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\cypri\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25\bin"/>
+    <property name="sun.java.command" value="C:\Users\cypri\AppData\Local\Temp\surefire12661763148102638165\surefirebooter-20260311165854850_3.jar C:\Users\cypri\AppData\Local\Temp\surefire12661763148102638165 2026-03-11T16-58-54_736-jvmRun1 surefire-20260311165854850_1tmp surefire_0-20260311165854850_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\cypri\Documents\Workspace\S6\Maitenance Applicative\MaintenanceApplicative2026\GildedRose\target\test-classes;C:\Users\cypri\Documents\Workspace\S6\Maitenance Applicative\MaintenanceApplicative2026\GildedRose\target\classes;C:\Users\cypri\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.2\junit-jupiter-5.8.2.jar;C:\Users\cypri\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\cypri\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\cypri\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\cypri\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cypri\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\cypri\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\cypri\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\cypri"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-09-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\cypri\Documents\Workspace\S6\Maitenance Applicative\MaintenanceApplicative2026\GildedRose"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\cypri\AppData\Local\Temp\surefire12661763148102638165\surefirebooter-20260311165854850_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25+37-LTS-3491"/>
+    <property name="user.name" value="cypri"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Users\cypri\.antigravity\extensions\oracle.oracle-java-25.0.1-universal\nbcode\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\cypri\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\cypri\AppData\Local\Temp\"/>
+    <property name="java.version" value="25"/>
+    <property name="user.dir" value="C:\Users\cypri\Documents\Workspace\S6\Maitenance Applicative\MaintenanceApplicative2026\GildedRose"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin;C:\PC SOFT\WINDEV Suite SaaS 2024\Personal\Android\AndroidSDK\platform-tools\;C:\Users\cypri\Documents\apk;C:\PC SOFT\WINDEV Suite SaaS 2024\Personal\Android\AndroidSDK\build-tools\34.0.0;C:\flutter\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\mongodb\bin;C:\mongosh\bin;C:\msys64\ucrt64\bin;C:\Program Files\dotnet\;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\cypri\AppData\Local\Microsoft\WindowsApps;C:\Users\cypri\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\cypri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cypri\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\cypri\AppData\Local\Microsoft\WindowsApps;C:\Program Files\mongosh\;C:\Program Files\MongoDB\Tools\100\bin;C:\Users\cypri\AppData\Local\GitHubDesktop\bin;C:\Users\cypri\AppData\Local\Microsoft\WinGet\Links;C:\Users\cypri\AppData\Local\Programs\Antigravity\bin;C:\Users\cypri\AppData\Roaming\npm;C:\Users\cypri\AppData\Local\Programs\Ollama;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25+37-LTS-3491"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="backstagePasses_increasesByTwo_when10DaysOrLess" classname="com.gildedrose.GildedRoseTest" time="0.022"/>
+  <testcase name="sulfuras_neverChanges_evenAfterSellIn" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="backstagePasses_increasesInQuality" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="agedBrie_increasesInQualityTwiceAsFast_afterSellIn" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="sulfuras_neverChanges" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="backstagePasses_dropsToZero_afterConcert" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="backstagePasses_increasesByThree_when5DaysOrLess" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="standardItem_decreasesQualityAndSellIn" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="quality_isNeverNegative" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="standardItem_decreasesQualityTwiceAsFast_afterSellIn" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="quality_isNeverMoreThan50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="agedBrie_increasesInQuality" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+</testsuite>
