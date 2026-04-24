@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class TitreEvenementTest {
 
@@ -9,5 +10,10 @@ class TitreEvenementTest {
         TitreEvenement titre = new TitreEvenement("Réunion équipe");
 
         assertEquals("Réunion équipe", titre.valeur());
+    }
+
+    @Test
+    void un_titre_vide_est_refuse() {
+        assertThrows(IllegalArgumentException.class, () -> new TitreEvenement(""));
     }
 }
