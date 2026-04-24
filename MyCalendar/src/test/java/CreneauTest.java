@@ -56,4 +56,21 @@ class CreneauTest {
 
         assertFalse(c1.chevauche(c2));
     }
+
+    @Test
+    void un_creneau_entierement_contenu_dans_un_autre_est_detecte() {
+        Creneau grand = new Creneau(
+                new DateEvenement(LocalDate.of(2026, 4, 24)),
+                new HeureDebut(LocalTime.of(9, 0)),
+                new DureeEvenement(Duration.ofMinutes(180))
+        );
+        Creneau petit = new Creneau(
+                new DateEvenement(LocalDate.of(2026, 4, 24)),
+                new HeureDebut(LocalTime.of(10, 0)),
+                new DureeEvenement(Duration.ofMinutes(30))
+        );
+
+        assertTrue(grand.chevauche(petit));
+        assertTrue(petit.chevauche(grand));
+    }
 }
