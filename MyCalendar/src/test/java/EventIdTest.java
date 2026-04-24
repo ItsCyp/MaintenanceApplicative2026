@@ -56,4 +56,12 @@ class EventIdTest {
         assertNotNull(id);
         assertNotNull(id.valeur());
     }
+
+    @Test
+    void deux_appels_a_nouveau_produisent_des_ids_differents() {
+        EventId id1 = EventId.nouveau();
+        EventId id2 = EventId.nouveau();
+
+        assertNotEquals(id1, id2);
+    }
 }
