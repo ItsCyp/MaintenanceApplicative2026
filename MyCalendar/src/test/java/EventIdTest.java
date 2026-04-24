@@ -4,6 +4,7 @@ import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class EventIdTest {
@@ -46,5 +47,13 @@ class EventIdTest {
         EventId id2 = new EventId(UUID.randomUUID());
 
         assertNotEquals(id1, id2);
+    }
+
+    @Test
+    void nouveau_genere_un_event_id_non_null() {
+        EventId id = EventId.nouveau();
+
+        assertNotNull(id);
+        assertNotNull(id.valeur());
     }
 }
