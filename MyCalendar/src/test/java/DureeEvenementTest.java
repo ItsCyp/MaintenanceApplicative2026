@@ -45,4 +45,9 @@ class DureeEvenementTest {
 
         assertNotEquals(duree1, duree2);
     }
+
+    @Test
+    void une_duree_negative_est_refusee() {
+        assertThrows(IllegalArgumentException.class, () -> new DureeEvenement(Duration.ofMinutes(-15)));
+    }
 }
