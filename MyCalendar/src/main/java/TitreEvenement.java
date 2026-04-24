@@ -6,7 +6,7 @@ public final class TitreEvenement {
 
     public TitreEvenement(String valeur) {
         this.valeur = Optional.ofNullable(valeur)
-                .filter(v -> !v.isEmpty())
+                .filter(v -> !v.isBlank())
                 .orElseThrow(() -> new IllegalArgumentException("Le titre ne peut pas être vide"));
     }
 
