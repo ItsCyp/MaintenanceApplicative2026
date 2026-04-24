@@ -40,4 +40,20 @@ class CreneauTest {
 
         assertFalse(c1.chevauche(c2));
     }
+
+    @Test
+    void deux_creneaux_a_des_dates_differentes_ne_se_chevauchent_pas() {
+        Creneau c1 = new Creneau(
+                new DateEvenement(LocalDate.of(2026, 4, 24)),
+                new HeureDebut(LocalTime.of(10, 0)),
+                new DureeEvenement(Duration.ofMinutes(60))
+        );
+        Creneau c2 = new Creneau(
+                new DateEvenement(LocalDate.of(2026, 4, 25)),
+                new HeureDebut(LocalTime.of(10, 0)),
+                new DureeEvenement(Duration.ofMinutes(60))
+        );
+
+        assertFalse(c1.chevauche(c2));
+    }
 }
