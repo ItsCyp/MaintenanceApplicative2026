@@ -50,4 +50,9 @@ class DureeEvenementTest {
     void une_duree_negative_est_refusee() {
         assertThrows(IllegalArgumentException.class, () -> new DureeEvenement(Duration.ofMinutes(-15)));
     }
+
+    @Test
+    void une_duree_nulle_est_refusee() {
+        assertThrows(IllegalArgumentException.class, () -> new DureeEvenement(Duration.ZERO));
+    }
 }
