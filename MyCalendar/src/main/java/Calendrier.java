@@ -12,4 +12,10 @@ public final class Calendrier {
     public void ajouter(Evenement evenement) {
         evenements.add(evenement);
     }
+
+    public List<Evenement> evenementsDansPeriode(Periode periode) {
+        return evenements.stream()
+                .filter(e -> periode.contient(e.creneau().date()))
+                .toList();
+    }
 }
