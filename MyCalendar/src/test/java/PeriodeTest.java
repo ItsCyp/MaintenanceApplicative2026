@@ -48,4 +48,12 @@ class PeriodeTest {
         assertTrue(p.contient(new DateEvenement(LocalDate.of(2026, 4, 1))));
         assertTrue(p.contient(new DateEvenement(LocalDate.of(2026, 4, 30))));
     }
+
+    @Test
+    void une_periode_avec_fin_avant_debut_est_refusee() {
+        DateEvenement debut = new DateEvenement(LocalDate.of(2026, 4, 30));
+        DateEvenement fin = new DateEvenement(LocalDate.of(2026, 4, 1));
+
+        assertThrows(IllegalArgumentException.class, () -> new Periode(debut, fin));
+    }
 }
