@@ -8,4 +8,8 @@ public final class Calendrier {
     public int taille() {
         return evenements.size();
     }
+
+    public void ajouter(Evenement evenement) {
+        evenements.add(evenement);
+    }
 }
