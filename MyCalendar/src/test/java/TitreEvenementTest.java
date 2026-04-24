@@ -16,4 +16,14 @@ class TitreEvenementTest {
     void un_titre_vide_est_refuse() {
         assertThrows(IllegalArgumentException.class, () -> new TitreEvenement(""));
     }
+
+    @Test
+    void un_titre_null_est_refuse() {
+        assertThrows(IllegalArgumentException.class, () -> new TitreEvenement(null));
+    }
+
+    @Test
+    void un_titre_ne_contenant_que_des_espaces_est_refuse() {
+        assertThrows(IllegalArgumentException.class, () -> new TitreEvenement("   "));
+    }
 }
