@@ -23,4 +23,8 @@ public final class Calendrier {
         return evenements.stream()
                 .anyMatch(existant -> existant.creneau().chevauche(candidat.creneau()));
     }
+
+    public void supprimer(EventId id) {
+        evenements.removeIf(e -> e.id().equals(id));
+    }
 }
