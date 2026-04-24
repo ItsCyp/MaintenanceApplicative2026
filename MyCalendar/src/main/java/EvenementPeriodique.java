@@ -13,6 +13,11 @@ public record EvenementPeriodique(
     private static final DateTimeFormatter HEURE_FORMAT = DateTimeFormatter.ofPattern("HH:mm");
 
     @Override
+    public Creneau creneau() {
+        return new Creneau(date, heure, duree);
+    }
+
+    @Override
     public String description() {
         return "Événement périodique : " + titre.valeur()
                 + " à partir du " + date.valeur().format(DATE_FORMAT)
