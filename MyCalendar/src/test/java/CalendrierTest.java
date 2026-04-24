@@ -4,6 +4,8 @@ import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CalendrierTest {
@@ -32,5 +34,25 @@ class CalendrierTest {
         calendrier.ajouter(rdv("Dentiste", LocalDate.of(2026, 4, 24), LocalTime.of(10, 0), 30));
 
         assertEquals(1, calendrier.taille());
+    }
+
+    @Test
+    void evenements_dans_periode_ne_retourne_que_les_evenements_de_cette_periode() {
+        Calendrier calendrier = new Calendrier();
+        Evenement enAvril = rdv("Avril", LocalDate.of(2026, 4, 15), LocalTime.of(10, 0), 30);
+        Evenement enMars = rdv("Mars", LocalDate.of(2026, 3, 15), LocalTime.of(10, 0), 30);
+        Evenement enMai = rdv("Mai", LocalDate.of(2026, 5, 15), LocalTime.of(10, 0), 30);
+        calendrier.ajouter(enAvril);
+        calendrier.ajouter(enMars);
+        calendrier.ajouter(enMai);
+
+        Periode avril = new Periode(
+                new DateEvenement(LocalDate.of(2026, 4, 1)),
+                new DateEvenement(LocalDate.of(2026, 4, 30))
+        );
+
+        List<Evenement> resultats = calendrier.evenementsDansPeriode(avril);
+
+        assertEquals(List.of(enAvril), resultats);
     }
 }
