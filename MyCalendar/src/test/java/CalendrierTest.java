@@ -86,4 +86,28 @@ class CalendrierTest {
 
         assertFalse(calendrier.conflit(evt));
     }
+
+    @Test
+    void supprimer_par_id_retire_levenement_correspondant() {
+        Calendrier calendrier = new Calendrier();
+        Evenement evt = rdv("A supprimer", LocalDate.of(2026, 4, 24), LocalTime.of(10, 0), 30);
+        calendrier.ajouter(evt);
+
+        calendrier.supprimer(evt.id());
+
+        assertEquals(0, calendrier.taille());
+    }
+
+    @Test
+    void supprimer_par_id_ne_retire_que_levenement_cible() {
+        Calendrier calendrier = new Calendrier();
+        Evenement aGarder = rdv("A garder", LocalDate.of(2026, 4, 24), LocalTime.of(10, 0), 30);
+        Evenement aSupprimer = rdv("A supprimer", LocalDate.of(2026, 4, 24), LocalTime.of(14, 0), 30);
+        calendrier.ajouter(aGarder);
+        calendrier.ajouter(aSupprimer);
+
+        calendrier.supprimer(aSupprimer.id());
+
+        assertEquals(1, calendrier.taille());
+    }
 }
