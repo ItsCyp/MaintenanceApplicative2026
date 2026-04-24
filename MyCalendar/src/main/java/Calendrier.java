@@ -18,4 +18,9 @@ public final class Calendrier {
                 .filter(e -> periode.contient(e.creneau().date()))
                 .toList();
     }
+
+    public boolean conflit(Evenement candidat) {
+        return evenements.stream()
+                .anyMatch(existant -> existant.creneau().chevauche(candidat.creneau()));
+    }
 }
